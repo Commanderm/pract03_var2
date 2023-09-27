@@ -35,14 +35,11 @@ public class Ball {
     }
 
     public void move(double xDisp, double yDisp){
-        this.x = this.x+xDisp;
-        this.y = this.y+yDisp;
+        this.x += xDisp;
+        this.y += yDisp;
     }
 
     public String toString() {
-        return "Ball{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Ball @ ("+this.x+", "+this.y+").";
     }
 }
